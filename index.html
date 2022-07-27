@@ -21,7 +21,7 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="navbar">
-                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#intro" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
@@ -43,7 +43,7 @@
 
                 <p>I'm a Web Developer, I love to create beautiful and functional websites.</p>
 
-                <a href="" class="download-resume-btn"><span>Donwload Resume</span> <i class="fa-solid fa-download"></i></a>
+                <a href="./docs/khalil-resume.pdf" target="_blank" class="download-resume-btn"><span>Donwload Resume</span> <i class="fa-solid fa-download"></i></a>
             </div>
         </div>
     </section>
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="more-projects">
-                <a href="./projects.html"><span>See More</span> <i class="fa-solid fa-arrow-right-long"></i></a>
+                <a href="#"><span>See More</span> <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
         </div>
     </section>
@@ -128,65 +128,69 @@
             <h4 class="page-title"><span>Skills</span> <i class="fa-solid fa-minus"></i></h4>
 
             <div class="skills-wrapper">
-
-                <div class="skill-item">
-                    <label for="js"><i class="fa-brands fa-js"></i> Javascript</label><br />
-                    <progress id="js" value="90" max="100"> 90% </progress>
-                </div>
-                
-                <div class="skill-item">
-                    <label for="scss"><i class="fa-brands fa-js"></i> Redux</label><br />
-                    <progress id="scss" value="50" max="100"> 50% </progress>
-                </div>
-
-                <div class="skill-item">
-                    <label for="reactjs"><i class="fa-brands fa-react"></i> React.js</label><br />
-                    <progress id="reactjs" value="90" max="100"> 90% </progress>
-                </div>
-                
-                <div class="skill-item">
-                    <label for="html"><i class="fa-brands fa-html5"></i> HTML</label><br />
-                    <progress id="html" value="90" max="100"> 90% </progress>
-                </div>
-                
-                <div class="skill-item">
-                    <label for="css"><i class="fa-brands fa-css3-alt"></i> CSS</label><br />
-                    <progress id="css" value="90" max="100"> 90% </progress>
-                </div>
-
-                <div class="skill-item">
-                    <label for="scss"><i class="fa-brands fa-sass"></i> SCSS</label><br />
-                    <progress id="scss" value="90" max="100"> 90% </progress>
-                </div>
-
-                <div class="skill-item">
-                    <label for="scss"><i class="fa-brands fa-github-square"></i> Gihub</label><br />
-                    <progress id="scss" value="60" max="100"> 60% </progress>
-                </div>
-
-                <div class="skill-item">
-                    <label for="scss"><i class="fa-brands fa-node-js"></i> Node.js</label><br />
-                    <progress id="scss" value="65" max="100"> 65% </progress>
-                </div>
-
-                <div class="skill-item">
-                    <label for="scss"><i class="fa-solid fa-database"></i> MySQL</label><br />
-                    <progress id="scss" value="60" max="100"> 60% </progress>
+                <div class="frontend-wrapper">
+                    <h4 class="stack-title">Frontend Stack</h4>
+                    <div class="frontend">
+                        <div class="skill-item">
+                            <img src="./img/javascript.svg" class="skill-svg" alt="">
+                            <span class="skill-text">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/reactjs.svg" class="skill-svg" alt="">
+                            <span class="skill-text">ReactJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/redux.svg" class="skill-svg" alt="">
+                            <span class="skill-text">Redux</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/css.svg" class="skill-svg" alt="">
+                            <span class="skill-text">CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/html.svg" class="skill-svg" alt="">
+                            <span class="skill-text">HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/sass.svg" class="skill-svg" alt="">
+                            <span class="skill-text">Sass</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/bootstrap.svg" class="skill-svg" alt="">
+                            <span class="skill-text">Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/tailwindcss.svg" class="skill-svg" alt="">
+                            <span class="skill-text">TailwindCSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/http.svg" class="skill-svg" alt="">
+                            <span class="skill-text">HTTP</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-item">
-                    <label for="scss"><i class="fa-solid fa-database"></i> MongoDB</label><br />
-                    <progress id="scss" value="50" max="100"> 50% </progress>
-                </div>
 
-                <div class="skill-item">
-                    <label for="scss"><i class="fa-solid fa-earth-americas"></i> REAST API</label><br />
-                    <progress id="scss" value="70" max="100"> 70% </progress>
-                </div>
-
-                <div class="skill-item">
-                    <label for="scss"><i class="fa-solid fa-earth-americas"></i> HTTP</label><br />
-                    <progress id="scss" value="90" max="100"> 90% </progress>
+                <div class="backend-wrapper">
+                    <h4 class="stack-title">Backend Stack Fandamental</h4>
+                    <div class="backend">
+                        <div class="skill-item">
+                            <img src="./img/nodejs.svg" class="skill-svg" alt="">
+                            <span class="skill-text">NodeJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/express.svg" class="skill-svg" alt="">
+                            <span class="skill-text">ExpressJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/mongodb.svg" class="skill-svg" alt="">
+                            <span class="skill-text">MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./img/rest-api.svg" class="skill-svg" alt="">
+                            <span class="skill-text">Rest API</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

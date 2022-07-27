@@ -159,13 +159,13 @@ section.intro .download-resume-btn {
   gap: .6rem;
 }
 
+.about {
+  background-color: #fff;
+}
+
 .about p {
   font-size: 1.2rem;
   line-height: 2rem;
-}
-
-.projects {
-  background-color: #fff;
 }
 
 .projects .project-items {
@@ -233,6 +233,10 @@ section.intro .download-resume-btn {
   gap: 1rem;
 }
 
+.skills {
+  background-color: white;
+}
+
 .skills .skills-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -243,12 +247,17 @@ section.intro .download-resume-btn {
 .skills .skill-item {
   padding-bottom: 1rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.skills progress {
-  width: 100% !important;
-  border-radius: 0;
-  height: 0.8rem;
+.skills .skill-svg {
+  width: 35px;
+}
+
+.skills .stack-title {
+  margin-bottom: 1rem;
 }
 
 .education {
@@ -340,6 +349,13 @@ footer a:hover {
   }
   .skills .skills-wrapper {
     grid-template-columns: 1fr;
+  }
+  .skills .backend, .skills .frontend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .skills .skill-svg {
+    width: 25px;
   }
   footer .contact-items {
     display: block;

@@ -180,6 +180,7 @@ section.intro {
 
 // about
 .about {
+    background-color: #fff;
     p {
         font-size: 1.2rem;
         line-height: 2rem;
@@ -188,7 +189,7 @@ section.intro {
 
 // projects
 .projects {
-    background-color: #fff;
+    
 
     .project-items {
         display: grid;
@@ -257,6 +258,7 @@ section.intro {
 
 // skills
 .skills {
+    background-color: white;
     .skills-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -267,12 +269,19 @@ section.intro {
     .skill-item {
         padding-bottom:1rem;
         width:100%;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
-    
-    progress {
-        width:100% !important;
-        border-radius: 0;
-        height: 0.8rem;
+
+    .skill-svg {
+        width: 35px;
+    }
+
+    .stack-title {
+        margin-bottom: 1rem;
+
     }
 }
 
@@ -280,7 +289,6 @@ section.intro {
 // education
 .education {
     background-color: #fff;
-
 }
 
 
@@ -389,6 +397,15 @@ footer {
     .skills {
         .skills-wrapper {
             grid-template-columns: 1fr;
+        }
+
+        .backend, .frontend {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .skill-svg {
+            width: 25px;
         }
     }
 
