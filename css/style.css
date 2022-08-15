@@ -48,8 +48,7 @@ a {
 }
 
 section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 6rem 0;
 }
 
 .text-green {
@@ -63,7 +62,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid #3d3d3d;
+  border-bottom: 1px solid #242a3e;
 }
 
 header nav {
@@ -112,13 +111,8 @@ section.intro {
   height: calc(100vh - 70px);
 }
 
-section.intro .container {
-  display: flex;
-  gap: 2rem;
-}
-
 section.intro .intro-text {
-  flex-basis: 70%;
+  text-align: center;
 }
 
 section.intro .intro-photo {
@@ -128,26 +122,59 @@ section.intro .intro-photo {
 
 section.intro h1 {
   font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
+  font-weight: 400;
+  margin-bottom: .5rem;
 }
 
 section.intro P {
-  line-height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
 }
 
-section.intro img {
+section.intro a {
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  transition: .25s ease;
+}
+
+section.intro a:hover {
+  background-color: #e7e7e7;
+  color: #191d2b;
+}
+
+.about {
+  background-color: #fff;
+}
+
+.about .about-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.about .about-image {
+  width: 30%;
+}
+
+.about .about-image img {
   width: 80%;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
 }
 
-section.intro img::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: #27ae60;
+.about .about-text {
+  width: 70%;
 }
 
-section.intro .download-resume-btn {
+.about p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.about .download-resume-btn {
   margin-top: 2rem;
   background: #27ae60;
   color: #fff;
@@ -157,15 +184,6 @@ section.intro .download-resume-btn {
   display: flex;
   align-items: center;
   gap: .6rem;
-}
-
-.about {
-  background-color: #fff;
-}
-
-.about p {
-  font-size: 1.2rem;
-  line-height: 2rem;
 }
 
 .projects .project-items {
@@ -314,9 +332,6 @@ footer a:hover {
     text-align: center;
     margin-bottom: 2rem;
   }
-  section.intro img {
-    width: 35%;
-  }
   section.intro .intro-text {
     text-align: center;
   }
@@ -328,6 +343,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 700px) {
+  section {
+    padding: 3rem 0;
+  }
   header .navbar {
     position: absolute;
     top: 76px;
@@ -346,6 +364,25 @@ footer a:hover {
   }
   section.intro h1 {
     font-size: 2rem;
+  }
+  .about .about-wrapper {
+    display: block;
+  }
+  .about .about-image, .about .about-text {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about .about-image img, .about .about-text img {
+    width: 50%;
+  }
+  .about .about-text {
+    margin-top: 2rem;
+  }
+  .about .download-resume-btn {
+    margin-left: auto;
+    margin-right: auto;
   }
   .skills .skills-wrapper {
     grid-template-columns: 1fr;

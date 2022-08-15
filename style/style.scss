@@ -18,6 +18,7 @@ $green-color:#27ae60;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -60,10 +61,7 @@ a {
 }
 
 section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    // margin-bottom: 1rem;
-    // background-color: rgb(244, 244, 244);
+    padding: 6rem 0;
 }
 
 .text-green {
@@ -78,7 +76,7 @@ header {
     position: sticky;
     top:0;
     width: 100%;
-    border-bottom: 1px solid #3d3d3d;
+    border-bottom: 1px solid #242a3e;
 
     nav {
         display: flex;
@@ -130,13 +128,13 @@ section.intro {
     color: #c5c5c5;
     height: calc(100vh - 70px);
 
-    .container {
-        display: flex;
-        gap: 2rem;
-    }
+    // .container {
+    //     display: flex;
+    //     gap: 2rem;
+    // }
 
     .intro-text {
-        flex-basis: 70%;
+        text-align: center;
     }
     .intro-photo {
         flex-shrink: 0;
@@ -145,24 +143,59 @@ section.intro {
 
     h1 {
         font-size: 3rem;
-        font-weight: 800;
-        margin-bottom: 1.5rem;
+        font-weight: 400;
+        margin-bottom: .5rem;
     }
     
     P {
-        line-height: 1.8rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
     }
 
-    img {
-        width: 80%;
+    a {
+        border: 1px solid;
+        border-radius: 2px;
+        padding: 10px 20px;
+        text-transform: capitalize;
+        transition: .25s ease;
+
+        &:hover {
+            background-color: #e7e7e7;
+            color: #191d2b;
+        }
+    }
+}
+
+// about
+.about {
+    background-color: #fff;
+
+    .about-wrapper {
+        margin-top: 2rem;
+        display: flex;
+        // align-items: center;
+        gap: 2rem;
     }
 
-    img::after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color: $green-color;
+    .about-image {
+        width: 30%;
 
+        img {
+            width: 80%;
+            border: 1px solid #dddddd;
+            border-radius: 50%;
+        }
+    }
+
+    .about-text {
+        width: 70%;
+    }
+
+
+    p {
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 
     .download-resume-btn {
@@ -178,19 +211,8 @@ section.intro {
     }
 }
 
-// about
-.about {
-    background-color: #fff;
-    p {
-        font-size: 1.2rem;
-        line-height: 2rem;
-    }
-}
-
 // projects
 .projects {
-    
-
     .project-items {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -348,10 +370,6 @@ footer {
             margin-bottom: 2rem;
         }
 
-        img {
-            width: 35%;
-        }
-
         .intro-text {
             text-align: center;
         }
@@ -365,6 +383,10 @@ footer {
 }
 
 @media screen and (max-width:700px) {
+    section {
+        padding: 3rem 0;
+    }
+
     header {
         .navbar {
             position: absolute;
@@ -394,6 +416,32 @@ footer {
         }
     }
 
+    .about {
+        .about-wrapper {
+            display: block;
+        }
+
+        .about-image, .about-text {
+            width: 80%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .about-text {
+            margin-top: 2rem;
+        }
+
+        .download-resume-btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     .skills {
         .skills-wrapper {
             grid-template-columns: 1fr;
@@ -409,7 +457,6 @@ footer {
         }
     }
 
-
     footer {
         .contact-items {
             display: block;
@@ -418,8 +465,4 @@ footer {
             margin-top: 2rem;
         }
     }
-}
-
-@media screen and (max-width:500px) {
-    
 }
